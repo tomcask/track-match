@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 -ml-2">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold text-center flex-1 text-gray-900 dark:text-white">Análisis</h1>
+<div class="w-8"></div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-8">
+<section>
+<h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Resumen de la temporada</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-background-dark rounded-lg p-4 text-center border border-gray-200 dark:border-gray-700">
+<p class="text-sm text-gray-600 dark:text-gray-400">Partidos jugados</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">15</p>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-lg p-4 text-center border border-gray-200 dark:border-gray-700">
+<p class="text-sm text-gray-600 dark:text-gray-400">Puntos / partido</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">18.5</p>
+</div>
+<div class="bg-white dark:bg-background-dark rounded-lg p-4 text-center col-span-2 border border-gray-200 dark:border-gray-700">
+<p class="text-sm text-gray-600 dark:text-gray-400">Rebotes / partido</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">7.2</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Puntos fuertes</h2>
+<p class="text-gray-600 dark:text-gray-400 mb-4">Excelente anotador con un promedio de 18.5 puntos por partido. Destaca en tiros de media distancia y tiros libres.</p>
+<div class="bg-white dark:bg-background-dark rounded-lg p-4 border border-gray-200 dark:border-gray-700">
+<div class="flex justify-between items-baseline">
+<div>
+<p class="text-sm font-medium text-gray-600 dark:text-gray-400">Puntos por partido</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">18.5</p>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Últimos 5 partidos</p>
+</div>
+<div class="h-40 mt-4 flex items-end justify-between space-x-2">
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 70%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P1</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 50%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P2</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary w-full rounded" style="height: 85%;"></div>
+<p class="text-xs mt-2 font-bold text-primary">P3</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 60%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P4</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 75%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P5</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">Áreas de mejora</h2>
+<p class="text-gray-600 dark:text-gray-400 mb-4">Necesita mejorar la defensa y la consistencia en los tiros de larga distancia.</p>
+<div class="bg-white dark:bg-background-dark rounded-lg p-4 border border-gray-200 dark:border-gray-700">
+<div class="flex justify-between items-baseline">
+<div>
+<p class="text-sm font-medium text-gray-600 dark:text-gray-400">Tiros de 3 puntos (%)</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">25%</p>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400">Últimos 5 partidos</p>
+</div>
+<div class="h-40 mt-4 flex items-end justify-between space-x-2">
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 40%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P1</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 30%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P2</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 50%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P3</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 20%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P4</p>
+</div>
+<div class="flex flex-col items-center w-1/5">
+<div class="bg-primary/20 dark:bg-primary/40 w-full rounded" style="height: 35%;"></div>
+<p class="text-xs mt-2 text-gray-500 dark:text-gray-400">P5</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<nav class="flex justify-around items-center border-t border-gray-200 dark:border-gray-800 px-4 py-2">
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">add_box</span>
+<span class="text-xs font-medium">Registro</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-xs font-medium">Historial</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="text-xs font-bold">Análisis</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
